@@ -2,8 +2,8 @@
 *
 
 # But not these directories
-!/silverbullet
-!/silverbullet_entrata
+!/silverbullet/**
+!/silverbullet_entrata/**
 
 # And not this file
 !.gitignore
