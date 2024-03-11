@@ -2,7 +2,8 @@
 *
 
 # But not these directories
-!/silverbullet/**
+!/silverbullet/
+!/silverbullet/**/*
 !/silverbullet_entrata/**
 
 # And not this file

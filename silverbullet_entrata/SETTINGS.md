@@ -15,7 +15,7 @@ actionButtons:
 - icon: home # Use any icon from https://feathericons.com
   command: "{[Navigate: Home]}"
   description: "Go to the index page"
-- icon: briefcase # Use any icon from https://feathericons.com
+- icon: briefcase 
   command: '{[Navigate: To Page]("Projects")}'
   description: "Go to the projects page"
 - icon: check-square
@@ -26,9 +26,14 @@ actionButtons:
 - icon: sidebar
   command: "{[Tree View: Toggle]}"
   description: "Toggle Tree View"
+  mobile: false
 - icon: terminal
   command: "{[Open Command Palette]}"
   description: Run command
+- icon: help-circle
+  command: '{[Navigate: To URL]("https://silverbullet.md")}'
+  description: "Navigate to silverbullet.md/"
+  mobile: false
 - icon: arrow-left
   command: "{[Navigate: Back in History]}"
   description: "Go to the previous page"
@@ -60,6 +65,11 @@ emoji:
     smile: 😀
     sweat_smile: 😅
 
+    
+# This will automatically commit (and if autoSync is set to true perform a sync, meaning do the whole "push" and "pull" dance) every 5 minutes. If no changes were made, the git commands won't do anything.
+git:
+  autoCommitMinutes: 5
+  autoSync: false
 
 # This plugs adds a tree view that allows you to navigate your SilverBullet pages Hierarchically.
 treeview:
